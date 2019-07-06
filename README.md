@@ -1,5 +1,5 @@
 ## Esercizi corso FrontEnd Udemy
 
-# Post your exercise here
+# Post your exercize here
 
 Hellow :3
