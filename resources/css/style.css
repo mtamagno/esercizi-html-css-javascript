@@ -147,7 +147,10 @@ h2:after {
 
 header {
   height: 600px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(
+      rgba(5, 46, 70, 0.658),
+      rgba(2, 36, 68, 0.788)
+    ),
     url(jmg/hero.jpg);
   background-size: cover;
   background-position: center;
@@ -159,6 +162,9 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  align-content: flex-start;
+  text-align: justify;
+  color: white;
 }
 
 .logo {
