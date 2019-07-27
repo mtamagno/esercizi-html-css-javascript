@@ -23,14 +23,14 @@ html {
 /* ----------------- */
 
 .row {
-  width: 600px;
+  width: 80%;
   text-align: start;
   display: block;
   margin: 0 auto 0 auto;
 }
 
 section {
-  padding: 80px 0;
+  padding: 20% 0;
 }
 
 .box {
@@ -42,47 +42,47 @@ section {
 h1,
 h2,
 h3 {
-    font-weight: 300;
-    text-transform: uppercase;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 h2 {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   font-size: 240%;
-  word-spacing: 4px;
-  letter-spacing: 1px;
+  word-spacing: 2%;
+  letter-spacing: 1%;
 }
 
 h2 {
   font-size: 180%;
   word-spacing: 2px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 5%;
   letter-spacing: 1px;
 }
 
 h3 {
   font-size: 110%;
-  margin-bottom: 15px;
+  margin-bottom: 2%;
 }
 
 h2:after {
   display: block;
-  height: 2px;
-  background-color: #e67e22; 
+  height: 1%;
+  background-color: #e67e22;
   content: " ";
-  width: 100px;
+  width: 20%;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 10%;
 }
 
 /* ---PARAGRAPHS--- */
-
 .long-copy {
-  line-height: 145px;
+  line-height: 25pxs;
   width: 70%;
   margin-left: 15%;
+  margin-bottom: 5%;
 }
 
 .box p {
@@ -147,17 +147,18 @@ h2:after {
 
 header {
   height: 600px;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(jmg/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(jmg/hero.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .logo {
