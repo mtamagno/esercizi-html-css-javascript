@@ -5,7 +5,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html,
@@ -22,7 +23,7 @@ body {
 
 .clearfix {zoom: 1}
 .clearfix:after {
-  content: "."
+  content: ".";
   clear: both;
   display: block;
   height: 0;
@@ -130,6 +131,7 @@ a:visited {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid #e67e22;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
   transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -149,6 +151,7 @@ input[type=submit] {
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -192,6 +195,13 @@ input[type=submit] {
 
 header {
   height: 600px;
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(5, 46, 70, 0.658)),
+      to(rgba(2, 36, 68, 0.788))
+    ),
+    url(jmg/hero.jpg);
   background-image: linear-gradient(
       rgba(5, 46, 70, 0.658),
       rgba(2, 36, 68, 0.788)
@@ -211,8 +221,10 @@ header {
   margin-left: 2%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  align-content: flex-start;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   text-align: justify;
   color: white;
 }
@@ -243,6 +255,7 @@ header {
   text-transform: uppercase;
   font-size: 90%;
   border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
   transition: border-bottom 0.2s;
 }
 
@@ -289,13 +302,18 @@ header {
   opacity: 0.7;
   width: 100%;
   height: auto;
-  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-photo img:hover {
   opacity: 1;
-  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 /* ----------------- */
@@ -304,6 +322,7 @@ header {
 
 .section-steps {
   background-color: #f4f4f4;
+  padding-top: 25%;
 }
 
 
@@ -371,6 +390,7 @@ header {
 /* ----------------- */
 
 .section-testimonials {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0.8))), url(back-customers.jpg);
   background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(back-customers.jpg);
   background-size: cover;
   color: #fff;
@@ -420,7 +440,8 @@ cite img {
   border-radius: 5px;
   width: 90%;
   margin-left: 5%;
-  box-shadow: 0 2px 2px #efefef;
+  -webkit-box-shadow: 0 2px 2px #efefef;
+          box-shadow: 0 2px 2px #efefef;
 }
 
 .plan-box div {
@@ -530,6 +551,7 @@ footer {
   text-decoration: none;
   border: 0;
   color: #888;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -547,6 +569,7 @@ footer {
 .logo-twitter,
 .logo-googleplus,
 .logo-instagram {
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
