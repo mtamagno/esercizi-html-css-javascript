@@ -626,3 +626,20 @@ footer p {
   text-align: center;
   margin-top: 20px;
 }
+
+/* ----------------- */
+/* ANIMATIONS */
+/* ----------------- */
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.js--wp-1 {
+  opacity: 0;
+}
+
+.js--wp-1.animated {
+  opacity: 1;
+}
